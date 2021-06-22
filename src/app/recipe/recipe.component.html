@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <h4>Recipes</h4> 
+    <div class="row">
+        <div *ngFor="let d of recipeDisplay" class="col-lg-3 mt-3 mb-3"> 
+            <div class="box rounded">
+                <img class="rounded" src="{{d.recipe.url}}" width="100%">
+            <h5 class="mt-2 mb-2">{{d.recipe.label}}</h5>
+         
+            
+            <a href="{{d.recipe.url}}" target="_blank" class="btn btn-dark btn-sm mt-2 mb-2">Read more</a> 
+            </div>         
+        </div>
+    </div>
+</div> 
+
